@@ -1,0 +1,82 @@
+@import '../../scss/devices.scss';
+$secondary: #222;
+
+@mixin trapezoid($top, $height, $width) {
+  border-top: $top solid $secondary;
+  border-left: $height solid transparent;
+  border-right: $height solid transparent;
+  height: 0;
+  margin-bottom: 3px;
+  width: $width;
+}
+
+#grail {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  header {
+    background-color: #ccc;
+    height: 60px;
+    width: 100%;
+
+    #logo {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      padding-left: 1.5em;
+      width: 50px;
+
+      .logo-top {
+        @include trapezoid(8px, 4px, 45px);
+      }
+
+      .logo-mid {
+        @include trapezoid(8px, 4px, 35px);
+      }
+
+      .logo-bot {
+        @include trapezoid(8px, 4px, 25px);
+      }
+    }
+  }
+
+  footer {
+    background-color: #666;
+    height: 60px;
+    width: 100%;
+  }
+
+  #grailbody {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+      flex: 1;
+    }
+
+    #content {
+      flex: 1;
+      padding: 12px 1em;
+      background-color: #eee;
+
+      @include tablet {
+        flex: 1;
+      }
+    }
+
+    #grailnav, #ads {
+      @include tablet {
+        flex: 0 0 12em;
+      }
+    }
+
+    #grailnav {
+      order: -1;
+    }
+  }
+}

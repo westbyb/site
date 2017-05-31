@@ -1,0 +1,75 @@
+@mixin trapezoid($top, $height, $width) {
+  border-top: $top solid $secondary;
+  border-left: $height solid transparent;
+  border-right: $height solid transparent;
+  height: 0;
+  margin-bottom: 3px;
+  width: $width;
+}
+
+$primary: #9CCC65;
+$secondary: #7CB342;
+
+
+#login {
+  align-items: center;
+  background-color: #eee;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+
+  #loginform {
+    background-color: #fff;
+    border: 1px solid $secondary;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+    height: 345px;
+    padding: 13px;
+    width: 320px;
+  }
+
+  #logo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+
+    .logo-top {
+      @include trapezoid(8px, 4px, 45px);
+    }
+
+    .logo-mid {
+      @include trapezoid(8px, 4px, 35px);
+    }
+
+    .logo-bot {
+      @include trapezoid(8px, 4px, 25px);
+    }
+  }
+
+  .login {
+    background-color: $primary;
+    color: white;
+    margin-bottom: 0.33em;
+    width: 100%;
+  }
+
+  .login-banner {
+    display: flex;
+    height: 45px;
+    width: 100%;
+
+    h4 {
+      padding-left: 12px;
+      padding-top: 2px;
+    }
+  }
+
+  .register {
+    background-color: #fff;
+    border-color: $primary;
+    width: 100%;
+  }
+}
+

@@ -1,4 +1,43 @@
 #sidebar {
   background-color: #ddd;
   border-right: 1px solid #999;
+  padding-top: 0.33em;
+
+  #bio {
+    height: 270px;
+    margin-top: 0.5em;
+    text-align: center;
+    width: 100%;
+
+    .email {
+      text-align: center;
+      width: 100%;
+    }
+
+    .fa {
+      color: #000;
+      font-size: 1.5em;
+      padding: 2px;
+    }
+
+    .me {
+      background-image: url("../../img/brianwedge.jpg");
+      background-position: center;
+      background-size: cover;
+      border-radius: 100%;
+      height: 200px;
+      width: 200px;
+      margin: 0 auto;
+      padding-bottom: 5px;
+    }
+  }
+
+  .active {
+    border-left: 3px solid black;
+  }
+
+  .list-group-item {
+    background-color: transparent;
+    border: none;
+  }
 }
