@@ -6,7 +6,6 @@ class Home extends React.Component {
   render() {
     return (
       <div id="home">
-        Home
         <About/>
         <Work/>
         <Education/>
@@ -21,18 +20,9 @@ class About extends React.Component {
       <div id="about">
         <h5>About</h5>
         Brian Westby<br/>
-        Web developer<br/>
-        Front-end<br/>
+        Web/mobile developer<br/>
+        Lots of front-end<br/>
         A little back-end
-
-        <div className="buzz">
-          <img src="app/img/nodejs.png" alt="" className="buzzTech"/>
-          <img src="app/img/react.png" alt="" className="buzzTech"/>
-          <img src="app/img/redux.png" alt="" className="buzzTech"/>
-          <img src="app/img/webpack.png" alt="" className="buzzTech"/>
-          <img src="app/img/sass.png" alt="" className="buzzTech"/>
-          <img src="app/img/babel.png" alt="" className="buzzTech"/>
-        </div>
       </div>
     )
   }
@@ -43,34 +33,51 @@ class Work extends React.Component {
     return (
       <div id="work">
         <h5>Experience</h5>
-        <div className="clm">
-          <img src="app/img/clm_logo.png" className="icon"/>
-          The CLM Group
-          <div className="job">
-            Software Engineer
+        <div className="jobs">
+          <div className="clm">
+            <img src="app/img/clm_logo.png" className="icon"/>
+            <div className="company">The CLM Group</div>
+            <div className="job">
+              Software Engineer<br/>
+              <small>2016 - Present</small>
+            </div>
+          </div>
+          <div className="intel">
+            <img src="app/img/intel.png" className="icon"/>
+            <div className="company">Intel</div>
+            <div className="job">
+              Software Engineer<br/>
+              <small>2014 - 2016</small>
+            </div>
+            <div className="job">
+              Intern<br/>
+              <small>2013 - 2014</small>
+            </div>
+          </div>
+          <div className="osu">
+            <img src="app/img/osu.png" className="icon"/>
+            <div className="company">Oregon State University</div>
+            <div className="job">
+              Teacher's Assistant<br/>
+              <small>2012 - 2013</small>
+            </div>
+          </div>
+          <div className="adp">
+            <img src="app/img/adp.png" className="icon"/>
+            <div className="company">ADP</div>
+            <div className="job">
+              Software Engineer I<br/>
+              <small>2012</small>
+            </div>
           </div>
         </div>
-        <div className="intel">
-          <img src="app/img/intel.png" className="icon"/>
-          Intel
-          <div className="job">
-            Software Engineer
-          </div>
-          <div className="job">Intern</div>
-        </div>
-        <div className="osu">
-          <img src="app/img/osu.png" className="icon"/>
-          Oregon State University
-          <div className="job">
-            Teacher's Assistant
-          </div>
-        </div>
-        <div className="adp">
-          <img src="app/img/adp.png" className="icon"/>
-          ADP
-          <div className="job">
-            Software Engineer I
-          </div>
+        <div className="buzz">
+          <div className="buzzTech"><img src="app/img/nodejs.png" alt="Nodejs" className="buzzTech"/></div>
+          <div className="buzzTech"><img src="app/img/react.png" alt="React" className="buzzTech"/></div>
+          <div className="buzzTech"><img src="app/img/redux.png" alt="Redux" className="buzzTech"/></div>
+          <div className="buzzTech"><img src="app/img/webpack.png" alt="Webpack" className="buzzTech"/></div>
+          <div className="buzzTech"><img src="app/img/sass.png" alt="Sass" className="buzzTech"/></div>
+          <div className="buzzTech"><img src="app/img/babel.png" alt="Babel" className="buzzTech"/></div>
         </div>
       </div>
     )
@@ -87,16 +94,6 @@ class Education extends React.Component {
           Bachelor of Science, Computer Science<br/>
           2013
         </div>
-      </div>
-    )
-  }
-}
-
-class Social extends React.Component {
-  render() {
-    return (
-      <div id="social">
-        <h5>Social</h5>
       </div>
     )
   }

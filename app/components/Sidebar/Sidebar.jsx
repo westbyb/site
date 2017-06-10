@@ -14,7 +14,8 @@ class Nav extends React.Component {
         <div id="bio">
           <div className="me"></div>
           <div className="contact">
-            Brian Westby
+            Brian Westby<br/>
+            Portland, OR
             <div className="email">
               brian.westby@gmail.com
             </div>

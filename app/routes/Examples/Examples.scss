@@ -1,0 +1,31 @@
+#examples {
+  .projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .project {
+      flex-direction: column;
+      padding: 4px 8px;
+      color: #444444;
+      max-width: 33%;
+      
+      .pt {
+        font-weight: bold;
+      }
+      .proj-example {
+        height: 150px;
+        display: block;
+        margin: 0 auto;
+      }
+      .stores {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        i {
+          font-size: 1.25em;
+        }
+      }
+    }
+  }
+}
