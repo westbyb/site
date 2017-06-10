@@ -19,10 +19,9 @@ class About extends React.Component {
     return (
       <div id="about">
         <h5>About</h5>
-        Brian Westby<br/>
-        Web/mobile developer<br/>
-        Lots of front-end<br/>
-        A little back-end
+        I'm a software engineer born and raised in Portland, OR.<br/>
+        Mainly a web/mobile developer, but I've dabbled in a lot of different disciplines.<br/>
+        Lots of experience as a front-end developer, but I have experience with the back-end as well.
       </div>
     )
   }

@@ -33,7 +33,7 @@ class Nav extends React.Component {
             <Link to="/examples" activeClassName="active">
               <li className="list-group-item">Work</li>
             </Link>
-            <li className="list-group-item" onClick={this.showResume}>
+            <li className="list-group-item faux-link" onClick={this.showResume}>
               Resume
             </li>
           </ul>

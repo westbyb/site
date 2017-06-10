@@ -6,14 +6,19 @@ html {
 
 body {
   height: 100%;
-  background: #1e5799; /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, #1e5799 0%, #2989d8 50%, #7db9e8 100%); /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover, #1e5799 0%,#2989d8 50%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, #1e5799 0%,#2989d8 50%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: #bdc3c7; /* Old browsers */
+background: -moz-linear-gradient(top, #bdc3c7 1%, #2c3e50 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #bdc3c7 1%,#2c3e50 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #bdc3c7 1%,#2c3e50 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdc3c7', endColorstr='#2c3e50',GradientType=0 ); /* IE6-9 */
 }
 
 #react-entry {
   height: 100%;
   width: 100%;
+}
+
+.faux-link {
+  color:#0275d8 !important;
+  cursor: pointer;
 }
