@@ -6,12 +6,11 @@ class Examples extends React.Component {
   render() {
     return (
       <div id="examples">
-        Examples
         <div className="projects">
           <div className="project">
             <div className="pt">MealTime Online</div>
             <img src="app/img/mto-web-desktop.png" alt="" className="proj-example"/>
-            Website for making payments into student's lunch accounts.
+            Website for making payments into student's lunch accounts, paying school fees, scheduling automated payments, and checking school account information.
           </div>
           <div className="project">
             <div className="pt">MealTime Parent</div>
@@ -20,7 +19,7 @@ class Examples extends React.Component {
               <i className="fa fa-android"></i>
               <i className="fa fa-apple"></i>
             </div>
-            Mobile version of MealTime online with mobile hooks.
+            Mobile version of MealTime Online on mobile with increased functionality, built with Cordova.
           </div>
           <div className="project">
             <div className="pt">MealTime Student</div>
@@ -29,7 +28,7 @@ class Examples extends React.Component {
               <i className="fa fa-android"></i>
               <i className="fa fa-apple"></i>
             </div>
-            App used by students to pay for their school lunches.
+            App used by students to pay for their school lunches, and check school and account information, built with Cordova.
           </div>
           <div className="project">
             <div className="pt">Intel XDK</div>
