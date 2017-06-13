@@ -33,7 +33,8 @@ class Examples extends React.Component {
           <div className="project">
             <div className="pt">Intel XDK</div>
             <img src="app/img/xdk-ad.png" alt="" className="proj-example"/>
-            Cross-platform mobile development application. Specifically worked on the App Designer tool and RealSense plugins.
+            Cross-platform mobile development application. Specifically worked on the App Designer tool and RealSense plugins.<br/>
+            <a href="https://software.intel.com/en-us/videos/how-to-use-app-designer-part-1">Webinar</a>
           </div>
         </div>
       </div>
