@@ -9,15 +9,11 @@ class App extends React.Component {
   render() {
     return (
       <div id="app">
-        <div id="app-body" className="container">
-          <div className="row">
-            <Nav/>
-            <div id="content" className="col-12 col-md-9">
-              {this.props.children}
-            </div>
-            <Tabbar/>
-          </div>
+        <Nav/>
+        <div id="content" className="col-12 col-md-9">
+          {this.props.children}
         </div>
+        <Tabbar/>
       </div>
     );
   }

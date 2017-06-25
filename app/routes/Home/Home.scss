@@ -2,6 +2,19 @@
   > div {
     padding-bottom: .66em;
   }
+  #about {
+    .mobile-about-photo {
+      // max-width: 100px;
+      text-align: center;
+      @media (min-width: 768px) {
+        display: none;
+      }
+      img {
+        max-height: 300px;
+        max-width: 100%;
+      }
+    }
+  }
   #work {
     flex: 1 1 auto;
   }

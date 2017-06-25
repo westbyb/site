@@ -2,9 +2,14 @@
   background-color: #fff;
   position: fixed;
   bottom: 0;
+  right: 0;
   display: flex;
   flex-direction: row;
   width: 100%;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 
   a, .tab {
     padding: 4px;

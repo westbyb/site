@@ -8,3 +8,7 @@ app.use(express.static(__dirname + '/build'));
 app.get('*', function(req, res) {
   res.sendFile(__dirname + '/index.html');
 });
+
+http.listen(3000, function(){
+  console.log('Server started listening on *:3000');
+});

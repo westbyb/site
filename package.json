@@ -4,9 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "build": "webpack --config webpack.config.js --progress --profile --colors",
     "test": "test",
     "start": "node server.js",
-    "dev": "webpack-dev-server --hot --inline --watch-poll --config ./webpack.dev.config.js --progress --colors --port 3000"
+    "dev": "webpack-dev-server --hot --inline --watch-poll --config ./webpack.config.js --progress --colors --port 3000"
   },
   "author": "Brian Westby",
   "license": "ISC",
