@@ -3,13 +3,43 @@
   min-height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
+  background-color: yellow;
+  display: block;
+  width: 100%;
+
+  #first {
+    .parallax-back {
+      background-color: blue;
+    }
+
+    .parallax-base {
+      background-color: goldenrod;
+    }
+  }
+
+  #second {
+    .parallax-back {
+      background-color: seagreen;
+    }
+
+    .parallax-base {
+      background-color: mistyrose;
+    }
+  }
 
   .parallax-back {
-    transform: translateZ(0);
+    transform: translateZ(-300px) scale(2);
   }
 
   .parallax-base {
-    transform: translateZ(-1px);
+    transform: translateZ(-1px) scale(1);
+  }
+
+  .parallax-group {
+    transform-style: preserve-3d;
+    position: relative;
+    display: block;
+    height: 100vh;
   }
 
   .parallax-layer {
@@ -18,5 +48,8 @@
     right: 0;
     bottom: 0;
     left: 0;
+
+    text-align: center;
+    font-size: 72pt;
   }
 }

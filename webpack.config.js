@@ -9,8 +9,8 @@ module.exports = {
   ],
   output: {
     path: BUILD_DIR,
-    filename: 'js/bundle.js',
-    publicPath: 'http://localhost:3000/'
+    filename: 'js/bundle.js'
+    // publicPath: 'http://localhost:3000/'
   },
   devServer: {
     historyApiFallback: true
@@ -81,6 +81,10 @@ module.exports = {
       {
         from: 'app/img/',
         to: 'img/'
+      },
+      {
+        from: 'app/BrianWestbyResume.pdf',
+        to: 'BrianWestbyResume.pdf'
       }
     ])
   ],

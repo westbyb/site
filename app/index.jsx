@@ -17,6 +17,7 @@ import Home from './routes/Home/Home.jsx';
 import Examples from './routes/Examples/Examples.jsx';
 import Login from './routes/Login/Login.jsx';
 import Grail from './routes/Grail/Grail.jsx';
+import Parallax from './routes/Parallax/Parallax.jsx';
 
 import './scss/index.scss';
 import './scss/devices.scss';
@@ -30,5 +31,6 @@ ReactDOM.render(
       </Route>
       <Route path="/login" component={Login} />
       <Route path="/grail" component={Grail} />
+      <Route path="/parallax" component={Parallax} />
     </Router>
   </Provider>, document.querySelector('#react-entry'));

@@ -5,7 +5,7 @@ import './Sidebar.scss';
 
 class Nav extends React.Component {
   showResume(e) {
-    window.open('./app/BrianWestbyResume.pdf', '_blank', 'location=yes');
+    window.open('./BrianWestbyResume.pdf', '_blank', 'location=yes');
   }
 
   render() {
